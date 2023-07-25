@@ -1,5 +1,5 @@
 `
-name: Generate a Docker and push to another branch
+name: Build docker image, test app and push to docker hub
 
 on:
   push:
