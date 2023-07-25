@@ -1,4 +1,3 @@
-`
 name: Build docker image, test app and push to docker hub
 
 on:
