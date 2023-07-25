@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tezosdapp
+spec:
+  replicas: 3 # Number of replicas/instances of your application to run
+  selector:
+    matchLabels:
+      app: tez-dapp
+  template:
+    metadata:
+      labels:
+        app: tez-dapp
+    spec:
+      containers:
+        - name: tezontainer
+          image: ferdocker89/tezos:latest
+          ports:
+            - containerPort: 3000
